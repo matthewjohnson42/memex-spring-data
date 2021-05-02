@@ -1,0 +1,30 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.matthewjohnson42</groupId>
+	<artifactId>memex-data</artifactId>
+	<version>0.0.1</version>
+	<name>Memex Data Library - Root Project</name>
+	<packaging>pom</packaging>
+	<properties>
+		<java.version>11</java.version>
+	</properties>
+	
+	<modules>
+		<module>lib</module>
+	</modules>
+
+	<build>
+        <plugins>
+            <!-- plugin for compiling the source files -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

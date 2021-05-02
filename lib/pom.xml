@@ -1,0 +1,11 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.matthewjohnson42</groupId>
+		<artifactId>memex-data</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<artifactId>memex-data-lib</artifactId>
+	<version>0.0.1</version>
+	<name>Memex Data Lib</name>
+</project>
