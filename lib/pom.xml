@@ -8,4 +8,39 @@
 	<artifactId>memex-data-lib</artifactId>
 	<version>0.0.1</version>
 	<name>Memex Data Lib</name>
+
+	<properties>
+		<springbootVersion>2.3.0</springbootVersion>
+		<java.version>11</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>${springbootVersion}.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-mongodb</artifactId>
+			<version>3.0.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver-sync</artifactId>
+			<version>4.0.3</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
