@@ -5,6 +5,8 @@
 	<version>0.0.1</version>
 	<name>Memex Data Library - Root Project</name>
 	<packaging>pom</packaging>
+    <!-- in lieu of a published parent pom, should be kept consistent with matthewjohnson42:memex-service -->
+    <!-- todo split into parent pom -->
 	<properties>
 		<java.version>11</java.version>
 	</properties>
