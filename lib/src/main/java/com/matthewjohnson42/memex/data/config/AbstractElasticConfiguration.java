@@ -11,7 +11,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-@Profile("ENABLE_ELASTIC_REPOSITORIES")
+@Profile("enableelasticrepositories")
 @Configuration
 public abstract class AbstractElasticConfiguration {
 

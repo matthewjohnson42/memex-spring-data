@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * Entity/DTO converter for raw text Mongo data
  */
-@Profile("ENABLE_MONGO_REPOSITORIES")
+@Profile("enablemongorepositories")
 @Component
 public class RawTextMongoConverter implements DtoEntityConverter<String, RawTextDto, RawTextMongo> {
 

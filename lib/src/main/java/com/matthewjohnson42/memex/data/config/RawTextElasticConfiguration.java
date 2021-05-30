@@ -3,7 +3,7 @@ package com.matthewjohnson42.memex.data.config;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-@Profile("ENABLE_ELASTIC_REPOSITORIES")
+@Profile("enableelasticrepositories")
 @Configuration
 public class RawTextElasticConfiguration extends AbstractElasticConfiguration {
 

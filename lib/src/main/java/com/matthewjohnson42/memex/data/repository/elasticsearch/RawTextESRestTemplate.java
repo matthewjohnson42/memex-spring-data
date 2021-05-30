@@ -27,7 +27,7 @@ import java.util.Optional;
  *
  * @see com.matthewjohnson42.memex.data.repository.Repository
  */
-@Profile("ENABLE_ELASTIC_REPOSITORIES")
+@Profile("enableelasticrepositories")
 @Component
 public class RawTextESRestTemplate extends ElasticRestTemplate<String, RawTextES> {
 

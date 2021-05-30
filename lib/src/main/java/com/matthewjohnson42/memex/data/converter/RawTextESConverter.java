@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * Entity/DTO converter for raw text Elastic Search data
  */
-@Profile("ENABLE_ELASTIC_REPOSITORIES")
+@Profile("enableelasticrepositories")
 @Component
 public class RawTextESConverter implements DtoEntityConverter<String, RawTextDto, RawTextES> {
 

@@ -15,7 +15,7 @@ import java.time.ZoneId;
 /**
  * Class that provides a MongoClient for connecting to MongoDB and a MongoTemplate for making modifications to Mongo
  */
-@Profile("ENABLE_MONGO_REPOSITORIES")
+@Profile("enablemongorepositories")
 @EnableMongoRepositories("com.matthewjohnson42.memex")
 @Configuration
 public class MongoConfiguration extends AbstractMongoClientConfiguration {
