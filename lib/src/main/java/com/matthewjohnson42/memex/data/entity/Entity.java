@@ -28,7 +28,7 @@ public abstract class Entity<ID> {
         this.updateDateTime = entity.getUpdateDateTime();
     }
 
-    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss.SSS")
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS")
     public LocalDateTime getCreateDateTime() {
         return createDateTime;
     }
@@ -38,7 +38,7 @@ public abstract class Entity<ID> {
         return this;
     }
 
-    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss.SSS")
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS")
     public LocalDateTime getUpdateDateTime() {
         return updateDateTime;
     }

@@ -23,6 +23,7 @@ public class RawTextESComposite extends RawTextES {
     public List<String> getHighlights() {
         return highlights;
     }
+
     public RawTextESComposite setHighlights(List<String> highlights) {
         this.highlights = highlights;
         return this;

@@ -12,6 +12,7 @@ public class RawTextESHit {
     public void set_source(RawTextES _source) {
         this._source = _source;
     }
+
     public RawTextES get_source() {
         return _source;
     }
@@ -20,6 +21,7 @@ public class RawTextESHit {
         this.highlight = highlight;
         return this;
     }
+
     public RawTextESHighlight getHighlight() {
         return highlight;
     }

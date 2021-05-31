@@ -14,10 +14,10 @@ import java.util.Optional;
 
 /**
  * Describes a data service used for implementing application persistence logic and transforming an entity to a DTO
- * @param <ID> class of the ID used by both the DTO and the Entity
- * @param <D> class of the DTO, used for data transformations and serialization
- * @param <E> class of the Entity, used for data persistence
  *
+ * @param <ID> class of the ID used by both the DTO and the Entity
+ * @param <D>  class of the DTO, used for data transformations and serialization
+ * @param <E>  class of the Entity, used for data persistence
  * @see Entity
  * @see DtoForEntity
  * @see Repository

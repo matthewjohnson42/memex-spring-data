@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * Class used to specify the structure of the Mongo document for the raw text entity.
  * Raw text entity is only text and DB tracking information.
  */
-@Document(collection="rawText")
+@Document(collection = "rawText")
 public class RawTextMongo extends Entity<String> {
 
     @Id

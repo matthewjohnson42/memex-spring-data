@@ -11,7 +11,6 @@ import java.time.LocalDateTime;
  * Returned from {@link com.matthewjohnson42.memex.data.service.DataService} extensions
  *
  * @param <ID> the class of the id
- *
  * @see com.matthewjohnson42.memex.data.entity.Entity
  * @see com.matthewjohnson42.memex.data.service.DataService
  * @see com.matthewjohnson42.memex.data.repository.Repository
@@ -42,7 +41,7 @@ public abstract class DtoForEntity<ID> {
     }
 
     @JsonProperty
-    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss.SSS")
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS")
     public LocalDateTime getCreateDateTime() {
         return createDateTime;
     }
@@ -54,7 +53,7 @@ public abstract class DtoForEntity<ID> {
     }
 
     @JsonProperty
-    @JsonFormat(pattern="yyyy-MM-dd'T'HH:mm:ss.SSS")
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSS")
     public LocalDateTime getUpdateDateTime() {
         return updateDateTime;
     }

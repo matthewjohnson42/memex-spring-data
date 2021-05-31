@@ -5,10 +5,10 @@ import com.matthewjohnson42.memex.data.entity.Entity;
 
 /**
  * A converter for controller/service data transfer objects and repository entities. Enforces data restrictions.
- * @param <ID> the type of the id of the dto and entity
- * @param <D> the type of the dto
- * @param <E> the type of the entity
  *
+ * @param <ID> the type of the id of the dto and entity
+ * @param <D>  the type of the dto
+ * @param <E>  the type of the entity
  * @see Entity
  * @see DtoForEntity
  * @see com.matthewjohnson42.memex.data.repository.Repository
@@ -25,7 +25,7 @@ public interface DtoEntityConverter<ID, D extends DtoForEntity<ID>, E extends En
             e.setId(d.getId());
         }
         return e;
-    };
+    }
 
     default public D updateFromEntity(D d, E e) {
         if (e.getId() != null) {
@@ -38,6 +38,6 @@ public interface DtoEntityConverter<ID, D extends DtoForEntity<ID>, E extends En
             d.setUpdateDateTime(e.getUpdateDateTime());
         }
         return d;
-    };
+    }
 
 }

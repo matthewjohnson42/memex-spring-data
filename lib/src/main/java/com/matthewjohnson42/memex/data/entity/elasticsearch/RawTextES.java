@@ -13,7 +13,7 @@ public class RawTextES extends Entity<String> {
 
     public RawTextES() { }
 
-    public RawTextES (RawTextES rawTextES) {
+    public RawTextES(RawTextES rawTextES) {
         super(rawTextES);
         this.id = rawTextES.getId();
         this.textContent = rawTextES.getTextContent();

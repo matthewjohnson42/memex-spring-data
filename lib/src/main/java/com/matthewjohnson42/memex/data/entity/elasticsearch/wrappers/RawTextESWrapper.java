@@ -9,6 +9,7 @@ public class RawTextESWrapper {
     public void setHits(RawTextESHits hits) {
         this.hits = hits;
     }
+
     public RawTextESHits getHits() {
         return hits;
     }

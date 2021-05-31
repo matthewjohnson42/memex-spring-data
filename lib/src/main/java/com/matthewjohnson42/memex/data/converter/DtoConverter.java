@@ -2,9 +2,9 @@ package com.matthewjohnson42.memex.data.converter;
 
 /**
  * A converter for distinct DTO types. Enforces data restrictions.
+ *
  * @param <D1> dto type 1
  * @param <E2> dto type 2
- *
  * @see DtoEntityConverter
  */
 public interface DtoConverter<D1, D2> {

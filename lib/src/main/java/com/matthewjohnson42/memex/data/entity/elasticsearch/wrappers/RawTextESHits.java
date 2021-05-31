@@ -12,6 +12,7 @@ public class RawTextESHits {
     public void setTotal(RawTextESTotal total) {
         this.total = total;
     }
+
     public RawTextESTotal getTotal() {
         return total;
     }
@@ -19,6 +20,7 @@ public class RawTextESHits {
     public void setHits(List<RawTextESHit> hits) {
         this.hits = hits;
     }
+
     public List<RawTextESHit> getHits() {
         return hits;
     }

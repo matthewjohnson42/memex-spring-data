@@ -23,7 +23,7 @@ public class RawTextDto extends DtoForEntity<String> {
     }
 
     @JsonCreator
-    public RawTextDto(@JsonProperty(value="textContent", required=true) String textContent) {
+    public RawTextDto(@JsonProperty(value = "textContent", required = true) String textContent) {
         this.textContent = textContent;
     }
 

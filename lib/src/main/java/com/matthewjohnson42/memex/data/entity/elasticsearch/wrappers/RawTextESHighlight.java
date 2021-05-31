@@ -11,6 +11,7 @@ public class RawTextESHighlight {
     public List<String> getTextContent() {
         return textContent;
     }
+
     public RawTextESHighlight setTextContent(List<String> textContent) {
         this.textContent = textContent;
         return this;

@@ -6,9 +6,9 @@ import java.util.Optional;
 
 /**
  * Implementation of a generic Repository, spanning Mongo and ES data stores
- * @param <T> the entity type being stored
- * @param <ID> the id type of the entity type specified by <T>
  *
+ * @param <T>  the entity type being stored
+ * @param <ID> the id type of the entity type specified by <T>
  * @see com.matthewjohnson42.memex.data.entity.Entity
  * @see com.matthewjohnson42.memex.data.dto.DtoForEntity
  * @see com.matthewjohnson42.memex.data.converter.DtoEntityConverter

@@ -18,11 +18,11 @@ import java.time.format.DateTimeFormatterBuilder;
 
 /**
  * A rest template for accessing the ElasticSearch index of the generic type
- * @param <E> the type corresponding to the ES index
  *
+ * @param <E> the type corresponding to the ES index
  * @see com.matthewjohnson42.memex.data.repository.Repository
  */
-public abstract class ElasticRestTemplate<ID, E extends Entity<ID>> extends RestTemplate implements Repository<E , ID> {
+public abstract class ElasticRestTemplate<ID, E extends Entity<ID>> extends RestTemplate implements Repository<E, ID> {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -67,6 +67,8 @@ public abstract class ElasticRestTemplate<ID, E extends Entity<ID>> extends Rest
             put(entityUrl, request);
             logger.info("Created ElasticSearch index '{}'", entityName);
         }
-    };
+    }
+
+    ;
 
 }
