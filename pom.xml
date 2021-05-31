@@ -1,21 +1,55 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.matthewjohnson42</groupId>
-	<artifactId>memex-data</artifactId>
-	<version>0.0.1</version>
+    <parent>
+        <groupId>com.github.matthewjohnson42</groupId>
+        <artifactId>memex-spring-parent</artifactId>
+        <version>1.0.5</version>
+    </parent>
+	<artifactId>memex-spring-data</artifactId>
+	<version>2.0.2</version>
 	<name>Memex Data Library - Root Project</name>
 	<packaging>pom</packaging>
-    <!-- in lieu of a published parent pom, should be kept consistent with matthewjohnson42:memex-service -->
-    <!-- todo split into parent pom -->
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+
+    <properties>
+        <java.version>11</java.version>
+    </properties>
 	
 	<modules>
 		<module>lib</module>
 	</modules>
 
-	<build>
+    <!-- maven remote repo configurations -->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <build>
         <plugins>
             <!-- plugin for compiling the source files -->
             <plugin>
@@ -29,4 +63,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
