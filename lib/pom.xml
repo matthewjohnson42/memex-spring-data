@@ -1,35 +1,14 @@
 <project>
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.matthewjohnson42</groupId>
-		<artifactId>memex-data</artifactId>
-		<version>0.0.1</version>
+		<groupId>com.github.matthewjohnson42</groupId>
+		<artifactId>memex-spring-data</artifactId>
+		<version>2.0.1</version>
 	</parent>
-	<artifactId>memex-data-lib</artifactId>
-	<version>0.0.1</version>
+	<artifactId>memex-spring-data-lib</artifactId>
+	<version>2.0.1</version>
 	<name>Memex Data Lib</name>
 
-	<properties>
-		<springbootVersion>2.3.0</springbootVersion>
-	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-			<version>${springbootVersion}.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-mongodb</artifactId>
-			<version>3.0.1.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongodb-driver-sync</artifactId>
-			<version>4.0.3</version>
-		</dependency>
-	</dependencies>
 	<build>
 		<plugins>
 			<plugin>
