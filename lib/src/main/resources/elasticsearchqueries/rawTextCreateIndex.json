@@ -1,0 +1,32 @@
+{
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "textContent": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "createDateTime": {
+        "type": "date",
+        "format": "strict_date_hour_minute_second_millis"
+      },
+      "updateDateTime": {
+        "type": "date",
+        "format": "strict_date_hour_minute_second_millis"
+      }
+    }
+  }
+}

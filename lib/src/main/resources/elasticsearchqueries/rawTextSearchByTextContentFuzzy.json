@@ -1,0 +1,50 @@
+{
+  "from": %s,
+  "size": %s,
+  "query": {
+    "bool": {
+      "must": {
+        "match": {
+          "textContent": {
+            "query": "%s",
+            "fuzziness": %s
+          }
+        }
+      },
+      "filter": [
+        {
+          "range": {
+            "createDateTime": {
+              "gte": %s,
+              "lte": %s
+            }
+          }
+        },
+        {
+          "range": {
+            "updateDateTime": {
+              "gte": %s,
+              "lte": %s
+            }
+          }
+        }
+      ]
+    }
+  },
+  "sort": [
+    {
+      "createDateTime": {
+        "order": "desc"
+      }
+    }
+  ],
+  "highlight": {
+    "number_of_fragments" : 3,
+    "fragment_size" : 150,
+    "fields" : {
+      "textContent" : { }
+    },
+    "pre_tags" : ["<b><i>"],
+    "post_tags" : ["</b></i>"]
+  }
+}
