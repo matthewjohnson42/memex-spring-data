@@ -66,7 +66,7 @@ public abstract class DataService<ID, D extends DtoForEntity<ID>, E extends Enti
     }
 
     public D update(D dto) {
-        return create(dto, LocalDateTime.now());
+        return update(dto, LocalDateTime.now());
     }
 
     public D deleteById(ID id) {

@@ -3,10 +3,10 @@
     <parent>
         <groupId>com.github.matthewjohnson42</groupId>
         <artifactId>memex-spring-data</artifactId>
-        <version>2.0.20</version>
+        <version>2.0.21</version>
     </parent>
     <artifactId>memex-spring-data-lib</artifactId>
-    <version>2.0.20</version>
+    <version>2.0.21</version>
     <name>Memex Data Lib</name>
 
     <build>
