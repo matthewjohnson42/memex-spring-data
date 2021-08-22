@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -16,7 +17,7 @@ import java.time.LocalDateTime;
  * @see com.matthewjohnson42.memex.data.repository.Repository
  * @see com.matthewjohnson42.memex.data.converter.DtoEntityConverter
  */
-public abstract class DtoForEntity<ID> {
+public abstract class DtoForEntity<ID> implements Serializable {
 
     @JsonIgnore
     private LocalDateTime createDateTime;

@@ -2,6 +2,7 @@ package com.matthewjohnson42.memex.data.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
@@ -12,7 +13,7 @@ import java.time.LocalDateTime;
  * @see com.matthewjohnson42.memex.data.service.DataService
  * @see com.matthewjohnson42.memex.data.converter.DtoEntityConverter
  */
-public abstract class Entity<ID> {
+public abstract class Entity<ID> implements Serializable {
 
     private LocalDateTime createDateTime;
     private LocalDateTime updateDateTime;
