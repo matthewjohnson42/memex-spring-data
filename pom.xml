@@ -1,22 +1,62 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.github.matthewjohnson42</groupId>
-        <artifactId>memex-spring-parent</artifactId>
-        <version>1.0.5</version>
-    </parent>
+    <groupId>com.github.matthewjohnson42</groupId>
     <artifactId>memex-spring-data</artifactId>
     <version>2.0.22</version>
     <name>Memex Data Library - Root Project</name>
     <packaging>pom</packaging>
 
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
+        <!-- Updated dependency versions to meet requirements -->
+        <spring.boot.version>3.4.1</spring.boot.version>
+        <spring.data.mongodb.version>4.4.1</spring.data.mongodb.version>
+        <mongodb.driversync.version>5.2.1</mongodb.driversync.version>
     </properties>
 
     <modules>
         <module>lib</module>
     </modules>
+
+    <!-- Override parent dependency versions -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-mongodb</artifactId>
+                <version>${spring.data.mongodb.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongodb-driver-sync</artifactId>
+                <version>${mongodb.driversync.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- Dependencies that were previously inherited from parent -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+            <version>${spring.data.mongodb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-sync</artifactId>
+            <version>${mongodb.driversync.version}</version>
+        </dependency>
+    </dependencies>
 
     <!-- maven remote repo configurations -->
     <repositories>
@@ -55,7 +95,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
