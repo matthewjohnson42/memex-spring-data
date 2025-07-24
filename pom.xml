@@ -3,16 +3,12 @@
     <parent>
         <groupId>com.github.matthewjohnson42</groupId>
         <artifactId>memex-spring-parent</artifactId>
-        <version>1.0.5</version>
+        <version>1.0.6</version>
     </parent>
     <artifactId>memex-spring-data</artifactId>
     <version>2.0.22</version>
     <name>Memex Data Library - Root Project</name>
     <packaging>pom</packaging>
-
-    <properties>
-        <java.version>11</java.version>
-    </properties>
 
     <modules>
         <module>lib</module>
@@ -55,7 +51,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
+                <version>3.11.0</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
