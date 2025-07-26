@@ -7,16 +7,16 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 public class RawTextElasticConfiguration extends AbstractElasticConfiguration {
 
-<span class="nc" id="L10">    public RawTextElasticConfiguration() {</span>
-<span class="nc" id="L11">        this.createIndexResourceFile = &quot;elasticsearchqueries/rawTextCreateIndex.json&quot;;</span>
-<span class="nc" id="L12">    }</span>
+<span class="fc" id="L10">    public RawTextElasticConfiguration() {</span>
+<span class="fc" id="L11">        this.createIndexResourceFile = &quot;elasticsearchqueries/rawTextCreateIndex.json&quot;;</span>
+<span class="fc" id="L12">    }</span>
 
     public String getRawTextSearchById() {
-<span class="nc" id="L15">        return readResource(&quot;elasticsearchqueries/rawTextSearchById.json&quot;);</span>
+<span class="fc" id="L15">        return readResource(&quot;elasticsearchqueries/rawTextSearchById.json&quot;);</span>
     }
 
     public String getRawTextSearchByTextContentFuzzy() {
-<span class="nc" id="L19">        return readResource(&quot;elasticsearchqueries/rawTextSearchByTextContentFuzzy.json&quot;);</span>
+<span class="fc" id="L19">        return readResource(&quot;elasticsearchqueries/rawTextSearchByTextContentFuzzy.json&quot;);</span>
     }
 
 }

@@ -1,8 +1,12 @@
 /home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/converter/DtoEntityConverterTest.java
 /home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/converter/RawTextMongoConverterTest.java
 /home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/dto/RawTextDtoTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/repository/mongo/RawTextMongoRepoTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/repository/RepositoryTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/service/DataServiceTest.java
 /home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/entity/elasticsearch/wrappers/RawTextESWrapperTest.java
 /home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/entity/EntityTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/config/RawTextElasticConfigurationTest.java
 /home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/entity/elasticsearch/wrappers/RawTextESHighlightTest.java
 /home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/entity/elasticsearch/RawTextESCompositeTest.java
 /home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/converter/RawTextESConverterTest.java
