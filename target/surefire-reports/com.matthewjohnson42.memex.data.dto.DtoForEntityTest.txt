@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.matthewjohnson42.memex.data.dto.DtoForEntityTest
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.02 s - in com.matthewjohnson42.memex.data.dto.DtoForEntityTest

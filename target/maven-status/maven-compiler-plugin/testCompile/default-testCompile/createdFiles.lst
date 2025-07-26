@@ -1,0 +1,8 @@
+com/matthewjohnson42/memex/data/entity/EntityTest$TestEntity.class
+com/matthewjohnson42/memex/data/dto/RawTextDtoTest.class
+com/matthewjohnson42/memex/data/entity/EntityTest.class
+com/matthewjohnson42/memex/data/dto/DtoForEntityTest.class
+com/matthewjohnson42/memex/data/entity/mongo/RawTextMongoTest.class
+com/matthewjohnson42/memex/data/entity/elasticsearch/RawTextESTest.class
+com/matthewjohnson42/memex/data/entity/elasticsearch/RawTextESCompositeTest.class
+com/matthewjohnson42/memex/data/dto/DtoForEntityTest$TestDto.class

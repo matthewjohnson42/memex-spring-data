@@ -1,0 +1,6 @@
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/entity/elasticsearch/RawTextESCompositeTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/dto/RawTextDtoTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/entity/mongo/RawTextMongoTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/entity/EntityTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/entity/elasticsearch/RawTextESTest.java
+/home/runner/work/memex-spring-data/memex-spring-data/lib/src/test/java/com/matthewjohnson42/memex/data/dto/DtoForEntityTest.java

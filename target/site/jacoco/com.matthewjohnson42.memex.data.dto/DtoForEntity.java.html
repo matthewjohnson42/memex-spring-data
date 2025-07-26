@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>DtoForEntity.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">memex-spring-data-test</a> &gt; <a href="index.source.html" class="el_package">com.matthewjohnson42.memex.data.dto</a> &gt; <span class="el_source">DtoForEntity.java</span></div><h1>DtoForEntity.java</h1><pre class="source lang-java linenums">package com.matthewjohnson42.memex.data.dto;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
+
+/**
+ * Describes DTOs associated with an {@link com.matthewjohnson42.memex.data.entity.Entity}
+ * Returned from {@link com.matthewjohnson42.memex.data.service.DataService} extensions
+ *
+ * @param &lt;ID&gt; the class of the id
+ * @see com.matthewjohnson42.memex.data.entity.Entity
+ * @see com.matthewjohnson42.memex.data.service.DataService
+ * @see com.matthewjohnson42.memex.data.repository.Repository
+ * @see com.matthewjohnson42.memex.data.converter.DtoEntityConverter
+ */
+public abstract class DtoForEntity&lt;ID&gt; implements Serializable {
+
+    @JsonIgnore
+    private LocalDateTime createDateTime;
+    @JsonIgnore
+    private LocalDateTime updateDateTime;
+
+<span class="fc" id="L27">    public DtoForEntity() { }</span>
+
+<span class="fc" id="L29">    public DtoForEntity(DtoForEntity&lt;ID&gt; dto) {</span>
+<span class="fc" id="L30">        this.createDateTime = dto.getCreateDateTime();</span>
+<span class="fc" id="L31">        this.updateDateTime = dto.getUpdateDateTime();</span>
+<span class="fc" id="L32">    }</span>
+
+    public abstract ID getId();
+
+    public abstract DtoForEntity&lt;ID&gt; setId(ID id);
+
+    @JsonIgnore
+    public DtoForEntity setCreateDateTime(LocalDateTime createDateTime) {
+<span class="fc" id="L40">        this.createDateTime = createDateTime;</span>
+<span class="fc" id="L41">        return this;</span>
+    }
+
+    @JsonProperty
+    @JsonFormat(pattern = &quot;yyyy-MM-dd'T'HH:mm:ss.SSS&quot;)
+    public LocalDateTime getCreateDateTime() {
+<span class="fc" id="L47">        return createDateTime;</span>
+    }
+
+    @JsonIgnore
+    public DtoForEntity setUpdateDateTime(LocalDateTime updateDateTime) {
+<span class="fc" id="L52">        this.updateDateTime = updateDateTime;</span>
+<span class="fc" id="L53">        return this;</span>
+    }
+
+    @JsonProperty
+    @JsonFormat(pattern = &quot;yyyy-MM-dd'T'HH:mm:ss.SSS&quot;)
+    public LocalDateTime getUpdateDateTime() {
+<span class="fc" id="L59">        return updateDateTime;</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
