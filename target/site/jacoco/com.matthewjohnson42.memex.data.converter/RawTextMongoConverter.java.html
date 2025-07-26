@@ -10,31 +10,31 @@ import org.springframework.stereotype.Component;
  */
 @Profile(&quot;enablemongorepositories&quot;)
 @Component
-<span class="nc" id="L13">public class RawTextMongoConverter implements DtoEntityConverter&lt;String, RawTextDto, RawTextMongo&gt; {</span>
+<span class="fc" id="L13">public class RawTextMongoConverter implements DtoEntityConverter&lt;String, RawTextDto, RawTextMongo&gt; {</span>
 
     public RawTextDto convertEntity(RawTextMongo rawTextMongo) {
-<span class="nc" id="L16">        return updateFromEntity(new RawTextDto(), rawTextMongo);</span>
+<span class="fc" id="L16">        return updateFromEntity(new RawTextDto(), rawTextMongo);</span>
     }
 
     public RawTextMongo convertDto(RawTextDto rawTextDto) {
-<span class="nc" id="L20">        return updateFromDto(new RawTextMongo(), rawTextDto);</span>
+<span class="fc" id="L20">        return updateFromDto(new RawTextMongo(), rawTextDto);</span>
     }
 
     @Override
     public RawTextDto updateFromEntity(RawTextDto rawTextDto, RawTextMongo rawTextMongo) {
-<span class="nc" id="L25">        rawTextDto = DtoEntityConverter.super.updateFromEntity(rawTextDto, rawTextMongo);</span>
-<span class="nc bnc" id="L26" title="All 2 branches missed.">        if (rawTextMongo.getTextContent() != null) {</span>
-<span class="nc" id="L27">            rawTextDto.setTextContent(rawTextMongo.getTextContent());</span>
+<span class="fc" id="L25">        rawTextDto = DtoEntityConverter.super.updateFromEntity(rawTextDto, rawTextMongo);</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if (rawTextMongo.getTextContent() != null) {</span>
+<span class="fc" id="L27">            rawTextDto.setTextContent(rawTextMongo.getTextContent());</span>
         }
-<span class="nc" id="L29">        return rawTextDto;</span>
+<span class="fc" id="L29">        return rawTextDto;</span>
     }
 
     public RawTextMongo updateFromDto(RawTextMongo rawTextMongo, RawTextDto rawTextDto) {
-<span class="nc" id="L33">        rawTextMongo = DtoEntityConverter.super.updateFromDto(rawTextMongo, rawTextDto);</span>
-<span class="nc bnc" id="L34" title="All 2 branches missed.">        if (rawTextDto.getTextContent() != null) {</span>
-<span class="nc" id="L35">            rawTextMongo.setTextContent(rawTextDto.getTextContent());</span>
+<span class="fc" id="L33">        rawTextMongo = DtoEntityConverter.super.updateFromDto(rawTextMongo, rawTextDto);</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (rawTextDto.getTextContent() != null) {</span>
+<span class="fc" id="L35">            rawTextMongo.setTextContent(rawTextDto.getTextContent());</span>
         }
-<span class="nc" id="L37">        return rawTextMongo;</span>
+<span class="fc" id="L37">        return rawTextMongo;</span>
     }
 
 }

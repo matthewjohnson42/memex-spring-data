@@ -21,23 +21,23 @@ public interface DtoEntityConverter&lt;ID, D extends DtoForEntity&lt;ID&gt;, E e
     public D convertEntity(E e);
 
     default public E updateFromDto(E e, D d) {
-<span class="nc bnc" id="L24" title="All 2 branches missed.">        if (d.getId() != null) {</span>
-<span class="nc" id="L25">            e.setId(d.getId());</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        if (d.getId() != null) {</span>
+<span class="fc" id="L25">            e.setId(d.getId());</span>
         }
-<span class="nc" id="L27">        return e;</span>
+<span class="fc" id="L27">        return e;</span>
     }
 
     default public D updateFromEntity(D d, E e) {
-<span class="nc bnc" id="L31" title="All 2 branches missed.">        if (e.getId() != null) {</span>
-<span class="nc" id="L32">            d.setId(e.getId());</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        if (e.getId() != null) {</span>
+<span class="fc" id="L32">            d.setId(e.getId());</span>
         }
-<span class="nc bnc" id="L34" title="All 2 branches missed.">        if (e.getCreateDateTime() != null) {</span>
-<span class="nc" id="L35">            d.setCreateDateTime(e.getCreateDateTime());</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        if (e.getCreateDateTime() != null) {</span>
+<span class="fc" id="L35">            d.setCreateDateTime(e.getCreateDateTime());</span>
         }
-<span class="nc bnc" id="L37" title="All 2 branches missed.">        if (e.getUpdateDateTime() != null) {</span>
-<span class="nc" id="L38">            d.setUpdateDateTime(e.getUpdateDateTime());</span>
+<span class="fc bfc" id="L37" title="All 2 branches covered.">        if (e.getUpdateDateTime() != null) {</span>
+<span class="fc" id="L38">            d.setUpdateDateTime(e.getUpdateDateTime());</span>
         }
-<span class="nc" id="L40">        return d;</span>
+<span class="fc" id="L40">        return d;</span>
     }
 
 }
